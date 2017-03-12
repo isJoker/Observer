@@ -21,7 +21,7 @@ public class ThirdActivity extends AppCompatActivity implements IObserver {
             @Override
             public void onClick(View view) {
                 //被观察者有了动作
-                ConcreteSubject.getInstance().operation();
+                ConcreteSubject.getInstance().operation("数据被刷新了");
             }
         });
 

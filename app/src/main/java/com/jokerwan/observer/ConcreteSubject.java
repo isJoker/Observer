@@ -26,7 +26,7 @@ public class ConcreteSubject extends ASubject {
 
 
     @Override
-    public void operation() {
-        notifyObservers("数据被刷新了");
+    public void operation(String content) {
+        notifyObservers(content);
     }
 }
