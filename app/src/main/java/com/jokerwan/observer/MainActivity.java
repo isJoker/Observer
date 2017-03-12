@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements IObserver{
         findViewById(R.id.btn_main).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ScondActivity.class);
+                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                 startActivity(intent);
             }
         });
