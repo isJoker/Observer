@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.jokerwan.observer.observer.IObserver;
-import com.jokerwan.observer.observer.ObserverManager;
 
 public class MainActivity extends AppCompatActivity implements IObserver{
 
@@ -27,8 +26,8 @@ public class MainActivity extends AppCompatActivity implements IObserver{
             }
         });
 
-        //订阅
-        ObserverManager.getInstance().addObserver(this);
+        //添加观察者到被观察者的被订阅列表，简称：订阅
+        ConcreteSubject.getInstance().addObserver(this);
     }
 
     @Override

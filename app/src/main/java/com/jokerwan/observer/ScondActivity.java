@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.jokerwan.observer.observer.IObserver;
-import com.jokerwan.observer.observer.ObserverManager;
 
 public class ScondActivity extends AppCompatActivity implements IObserver{
 
@@ -27,7 +26,7 @@ public class ScondActivity extends AppCompatActivity implements IObserver{
         });
 
         //订阅
-        ObserverManager.getInstance().addObserver(this);
+        ConcreteSubject.getInstance().addObserver(this);
     }
 
     @Override

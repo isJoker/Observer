@@ -17,5 +17,6 @@ public interface Subject {
     //通知所有的观察者
     void notifyObservers(String content);
 
-
+    //自身的操作
+    void operation();
 }

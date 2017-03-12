@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.jokerwan.observer.observer.IObserver;
-import com.jokerwan.observer.observer.ObserverManager;
 
 public class ThirdActivity extends AppCompatActivity implements IObserver {
 
@@ -21,12 +20,13 @@ public class ThirdActivity extends AppCompatActivity implements IObserver {
         findViewById(R.id.btn_third).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ObserverManager.getInstance().notifyObservers("数据被刷新了");
+                //被观察者有了动作
+                ConcreteSubject.getInstance().operation();
             }
         });
 
         //订阅
-        ObserverManager.getInstance().addObserver(this);
+        ConcreteSubject.getInstance().addObserver(this);
     }
 
     @Override
