@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by ${JokerWan} on 2017/3/11.
  * WeChat：wjc398556712
- * Function：抽象的被观察者
+ * Function：被观察者需要继承的抽象类
  */
 
 public abstract class ASubject implements Subject {

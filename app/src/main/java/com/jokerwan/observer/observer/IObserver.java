@@ -3,7 +3,7 @@ package com.jokerwan.observer.observer;
 /**
  * Created by ${JokerWan} on 2017/3/11.
  * WeChat：wjc398556712
- * Function：观察者接口
+ * Function：观察者需要实现的接口
  */
 
 public interface IObserver {
