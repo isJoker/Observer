@@ -26,7 +26,7 @@ public class ScondActivity extends AppCompatActivity implements IObserver{
         });
 
         //订阅
-        ConcreteSubject.getInstance().addObserver(this);
+        ConcreteObservable.getInstance().addObserver(this);
     }
 
     @Override

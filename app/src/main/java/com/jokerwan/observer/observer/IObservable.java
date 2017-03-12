@@ -6,7 +6,7 @@ package com.jokerwan.observer.observer;
  * Function：主体（被观察者）接口
  */
 
-public interface Subject {
+public interface IObservable {
 
     //增加观察者
     void addObserver(IObserver observer);

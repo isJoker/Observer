@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Function：被观察者需要继承的抽象类
  */
 
-public abstract class ASubject implements Subject {
+public abstract class AObservable implements IObservable {
 
     //观察者的集合
     private ArrayList<IObserver> observers = new ArrayList<>();

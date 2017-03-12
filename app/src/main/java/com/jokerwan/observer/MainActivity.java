@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements IObserver{
         });
 
         //添加观察者到被观察者的被订阅列表，简称：订阅
-        ConcreteSubject.getInstance().addObserver(this);
+        ConcreteObservable.getInstance().addObserver(this);
     }
 
     @Override
